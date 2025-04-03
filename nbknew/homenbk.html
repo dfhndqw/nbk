@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحة مع فورم وصور</title>
     <link rel="stylesheet" href="logo.css">
+    <style>
+        /* تعيين ارتفاع الصفحة الكامل */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* استخدام flexbox لجعل الصفحة تأخذ كامل الارتفاع */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;  /* يضمن أن الصفحة تأخذ على الأقل ارتفاع الشاشة */
+        }
+
+        /* محتوى الصفحة */
+        .main-content {
+            flex-grow: 1;  /* يضمن أن المحتوى الرئيسي يملأ المساحة المتاحة */
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: auto; /* هذا يضمن أن الفوتر سيظل في أسفل الصفحة */
+        }
+    </style>
 </head>
 <body>
 
